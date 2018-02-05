@@ -1,9 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = '1.2.10'
-    def dexguardEnable = System.getProperty('DEXGUARD_ENABLE')
-    def appType = System.getProperty('APP_TYPE')
-
     repositories {
         mavenLocal()
         maven { url 'http://10.75.223.20:8081/repository/maven-public/' }

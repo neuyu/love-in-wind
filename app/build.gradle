@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion build_tools_version
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+
+        versionName '1.0'
+        versionCode 100
+        applicationId 'com.neuyu.love.wind'
+
+        manifestPlaceholders = [
+                application_name: "爱在风中"
+
+        ]
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+
+}
